@@ -1,0 +1,140 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     background-color: rgb(4, 4, 39);
+   
+}
+
+/* navbar */
+.navbar{
+    background-color: rgb(4, 4, 39);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.navbar>img{
+    max-width: 90%;
+    width: 300px;
+}
+.dropbtn {
+   background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .dropdown {
+    display: flex;
+   text-align: center;
+   margin-left: -10rem;
+   padding: 1rem;
+  }
+  .inr{
+      background-color: rgb(77, 77, 81);
+      border-radius: 10px;
+  }
+  .btc{
+    background-color: rgb(77, 77, 81);
+    border-radius: 10px;
+  }
+  .first{
+      margin-right: 13px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 20px;
+    margin-top: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 3px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: transparent}
+  
+  .first:hover .dropdown-content {
+    display: block;
+  }
+  .second:hover .dropdown-content {
+    display: block;
+  }
+  .buy{
+      background-color: rgb(77, 77, 81);
+      border-radius: 12px;
+      
+      text-align: center;
+      margin-top: 1px;
+      padding: 0.5rem 0.5rem;
+      padding-top: 1rem;
+      margin-left:10px;
+      height: 27px;
+  }
+
+  /*countdown  */
+  #count{
+    border: 5px solid #0088cc ;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 3px;
+  }
+
+  /* telegram */
+  .tel{
+      margin-top: 30px;
+  }
+  .telegram{
+      background-color: #0088cc;
+      margin-top: 20px;
+      padding: 1rem;
+      border-radius: 10px;
+  }
+ 
+ /* image */
+ #section {
+  width:100%;
+  
+  height:300px;
+}
+img {
+  width:100%;
+  height:100%;
+}
+
+/* table */
+ #table{
+     color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ 
+ .pointer{
+     padding: 5rem;
+ }
+ .center{
+     text-align: center;
+    padding: 10px;
+    
+ }
+ .bg{
+     background-color: rgb(83, 83, 88);
+     padding: 10px;
+ }
+ 
+
+ 
+ a{
+  text-decoration: none;
+  color: white;
+}

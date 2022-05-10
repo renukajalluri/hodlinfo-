@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <!-- navbar -->
+   <div class="navbar">
+       <img src="./images/logo.png" alt="">
+       <div class="dropdown">
+       <div class="first">
+        <button class="dropbtn inr">INR</button>
+            <div class="dropdown-content">
+            <a href="#">INR</a>
+            </div>
+       </div>
+       <div class="second">
+        <button class="dropbtn btc">BTC</button>
+        <div class="dropdown-content">
+            <a href="#">BTC</a>
+        </div>
+       </div> 
+       <div class="buy">
+       <a href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn" target="_blank">   Buy BTC</a>     
+       </div>   
+    </div>
+    <div class="tel" >
+       <span style="color: white;" id="count"> 60</span>
+       <a class="telegram" href=""> <i class="fa-brands fa-telegram"></i> Connect To Telegram</a>
+    </div>
+   </div>
+
+
+<!-- image container -->
+    <div  id="section">
+      <img src="./images/container.png" alt="">  
+    </div> 
+
+    <!-- data table -->
+   <section id="table">
+     <table class="table">
+        <thead>
+         <tr>
+            <th>
+                <h4><span class="pointer">#</span></h4>
+            </th>
+            <th>
+                <h4><span class="pointer">Name</span></h4>
+            </th>
+            <th>
+                <h4><span class="pointer">Last </span></h4>
+            </th>
+            <th><h4><span class="pointer">Buy </span></h4>
+            </th>
+            <th><h4><span class="pointer">Volume</span></h4>
+            </th>
+            <th>
+                <h4><span class="pointer">Base Unit</span></h4>
+            </th>
+         </tr>
+        </thead>
+        <tbody class="bg">
+            <% for(var i=1; i < post.length; i++) { %>
+            <tr class="m">
+                <td class="center"><%= i %></td>       
+               <td class="center"><%= post[i].name %></td>
+               <td class="center"><%= post[i].last %></td>
+               <td class="center"><%= post[i].buy %></td>
+               <td class="center"><%= post[i].volume %></td>
+               <td class="center"><%= post[i].base_unit %></td>  
+            </tr>
+            <% } %> 
+        </tbody>
+     </table>
+       </div>
+   </section>
+
+   <!-- javascript for countdown -->
+<script type="text/javascript">
+    var counter = 60;
+    setInterval(()=>{
+        counter--;
+        if(counter >= 0){
+            id = document.getElementById("count");
+            id.innerHTML = counter;
+        }
+    },1000);
+
+    
+</script>
+</body>
+</html>
